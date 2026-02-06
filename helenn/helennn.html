@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Para Helencita</title>
+
+<style>
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Montserrat:wght@300;400&display=swap");
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(circle at top, #6fa3ff, #2c3e50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+}
+
+.carta {
+    background: rgba(255, 255, 255, 0.92);
+    max-width: 750px;
+    width: 90%;
+    padding: 50px;
+    border-radius: 25px;
+    box-shadow: 0 25px 60px rgba(0,0,0,0.35);
+    animation: aparecer 1.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* brillo suave */
+.carta::before {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        120deg,
+        transparent 40%,
+        rgba(255,255,255,0.4),
+        transparent 60%
+    );
+    animation: brillo 6s infinite linear;
+}
+
+h1 {
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    color: #2f4f7f;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.9;
+    color: #2b2b2b;
+    text-align: justify;
+    margin-bottom: 22px;
+}
+
+.firma {
+    margin-top: 40px;
+    text-align: right;
+    font-size: 18px;
+    font-style: italic;
+    color: #444;
+}
+
+.postdata {
+    margin-top: 25px;
+    font-style: italic;
+    color: #2f4f7f;
+}
+
+.musica {
+    margin-top: 35px;
+    text-align: center;
+}
+
+audio {
+    width: 100%;
+    max-width: 400px;
+}
+
+.corazon {
+    text-align: center;
+    font-size: 26px;
+    margin-top: 20px;
+    color: #3b6cff;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes brillo {
+    from {
+        transform: translateX(-50%);
+    }
+    to {
+        transform: translateX(50%);
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="carta">
+    <h1>Para Helen</h1>
+
+    <p>Helencita,</p>
+
+    <p>
+        Te amo demasiado mi amorcito🥺 desde la escuela, desde que te conocí en sexto. Desde ese
+        momento algo en mí supo que tú no ibas a ser alguien cualquiera.
+        Nunca pude decirte lo que sentía antes por miedo a perderte, pero el amor
+        siempre estuvo ahí, creciendo conmigo.
+    </p>
+
+    <p>
+        Y ahora que tengo la oportunidad quiero que sepas que te amo, que disfruto cada momento que
+        compartimos desde hace años y también los de ahora como cuando vemos tiktok o vemos Kdramas. Me gustas porque
+        eres divertida, inteligente, única. No puedo dejar de mirarte
+        y tampoco quiero hacerlo se que suena acosador o algo pero es la verdad.
+    </p>
+
+    <p>
+        Me gusta verte distraída, apreciar lo bonita que eres, pensar en
+        abrazarte y estar siempre contigo. Esto no es algo reciente, es algo que
+        llevo conmigo desde hace nueve años y seguira para siempre.
+    </p>
+
+    <p>
+        Te amo y siempre lo haré plaiplaiplai.
+    </p>
+
+    <div class="firma">
+        Con todo mi corazón<br>
+        Luis
+    </div>
+
+    <div class="postdata">
+    Me gustaría ser tu papu helencita
+    </div>
+
+<body>
+
+<audio controls>
+<source src="1.mp3" type="audio/mpeg">
+
+</audio>
+</div>
+
+</div>
+
+</body>
+</html>
